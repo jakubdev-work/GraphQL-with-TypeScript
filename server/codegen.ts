@@ -7,10 +7,11 @@ const config: CodegenConfig = {
       plugins: ["typescript", "typescript-resolvers"],
       config: {
         contextType: "./context#DataSourceContext",
-        mappers : {
-            Track : './models#TrackModel',
-            Author: './models#AuthorModel'
-        }
+        mappers: {
+          Track: "./models#TrackModel",
+          Author: "./models#AuthorModel",
+          Module: "./models#ModuleModel",
+        },
       },
     },
   },
